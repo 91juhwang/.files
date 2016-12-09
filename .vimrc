@@ -1,3 +1,6 @@
+" Vim newest upgrade in MacOSX --- Below Link ----
+"http://stackoverflow.com/questions/7211820/update-built-in-vim-on-mac-os-x
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -19,7 +22,8 @@ Plugin 'Shougo/neocomplcache.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
-
+Plugin 'jpo/vim-railscasts-theme'
+Plugin 'Yggdroot/indentLine'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,14 +39,18 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax enable
+"solarized theme"
 set background=dark
-colorscheme solarized "plugin solarized 
+"colorscheme solarized "plugin solarized 
+colorscheme railscasts
 set nu "display numberlines
 set autoindent "autoindent
 set smartindent "a little bit smarter indent
 set laststatus=2 "displaying status bar
 "displaying status bar in this format 
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\ 
+let g:indentLine_char='|'
+let g:indentLine_color_term = 239
 set hlsearch "highlight searched words
 set showmatch "matching the prenthesis and closing brackets
 set ruler "displaying current cursor
@@ -51,9 +59,4 @@ set shiftwidth=2 "shifting tabs in 2 spaces when indenting with >
 set ts=2 "resizing tabspaces
 set expandtab "on pressing tab, insert 2 spaces 
 set title "displaying the title of the current file
-
-
-
-
-
 
