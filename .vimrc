@@ -1,8 +1,7 @@
-" Vim newest upgrade in MacOSX --- Below Link ----
-"http://stackoverflow.com/questions/7211820/update-built-in-vim-on-mac-os-x
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
+"   Vim newest upgrade in MacOSX --- Below Link ----
+"   http://stackoverflow.com/questions/7211820/update-built-in-vim-on-mac-os-x
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
