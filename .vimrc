@@ -20,9 +20,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'jpo/vim-railscasts-theme'
-Plugin 'Yggdroot/indentLine'
+Plugin 'jistr/vim-nerdtree-tabs' "nerdtree tabs
+Plugin 'jpo/vim-railscasts-theme' "Railscasts colorscheme
+Plugin 'Yggdroot/indentLine' "indenting line
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,4 +58,10 @@ set shiftwidth=2 "shifting tabs in 2 spaces when indenting with >
 set ts=2 "resizing tabspaces
 set expandtab "on pressing tab, insert 2 spaces 
 set title "displaying the title of the current file
-
+let g:neocomplcache_enable_at_startup=1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>" 
+let g:neocomplcache_enable_smart_case = 1 "use Smartcase
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS "omni listing for css
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags "omni listing for html
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS "omni listing for js
