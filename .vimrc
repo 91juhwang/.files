@@ -23,6 +23,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs' "nerdtree tabs
 Plugin 'jpo/vim-railscasts-theme' "Railscasts colorscheme
 Plugin 'Yggdroot/indentLine' "indenting line
+Plugin 'tpope/vim-surround'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
