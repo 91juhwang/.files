@@ -14,17 +14,15 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugin goes below here
 Plugin 'The-NERD-Tree'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
-Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-fugitive' "git wrapper
+Plugin 'scrooloose/syntastic' "syntax checking for VIM, 
+Plugin 'mattn/emmet-vim' "html auto
 Plugin 'Shougo/neocomplcache.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs' "nerdtree tabs
 Plugin 'jpo/vim-railscasts-theme' "Railscasts colorscheme
 Plugin 'Yggdroot/indentLine' "indenting line
-Plugin 'tpope/vim-surround'
-Plugin 'morhetz/gruvbox' "colorscheme gruv
+Plugin 'tpope/vim-surround' "word surroundings for brackets, quotes, etc. 
+Plugin 'morhetz/gruvbox' "colorscheme gruvbox
 Plugin 'tpope/vim-endwise' "End wisely def end block
 Plugin 'jiangmiao/auto-pairs' "auto closing brackets
 " All of your Plugins must be added before the following line
