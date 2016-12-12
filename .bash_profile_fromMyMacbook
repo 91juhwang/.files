@@ -6,9 +6,7 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 alias served="ruby -run -e httpd . -p 5000"
 
-export QUOTE_API_KEY=BjQC3vbzEZmshLm52Tkf60otAvDpp1dhB9Jjsn5CHyklJdcNDl
-export RIOT_API_KEY=RGAPI-3DA52C57-BB87-4FA4-A4B4-32CC2E7E68FE
-export SENDGRID_API_KEY=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
+# Deleted API keys in my Macbook Bash_Profile
 export PATH=/opt/local/bin:$PATH
 
 # Load the shell dotfiles, and then some:
