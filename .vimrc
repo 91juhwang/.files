@@ -24,6 +24,7 @@ Plugin 'jistr/vim-nerdtree-tabs' "nerdtree tabs
 Plugin 'jpo/vim-railscasts-theme' "Railscasts colorscheme
 Plugin 'Yggdroot/indentLine' "indenting line
 Plugin 'tpope/vim-surround'
+Plugin 'morhetz/gruvbox' "colorscheme gruv
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -39,10 +40,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax enable
+"color section -----------------------
 "solarized theme"
 set background=dark
 "colorscheme solarized "plugin solarized 
-colorscheme railscasts
+let g:molokai_original = 1 "matching original molokai bg
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='hard' 
+"colorscheme railscasts
+"color section ends --------------------
 set nu "display numberlines
 set autoindent "autoindent
 set smartindent "a little bit smarter indent
